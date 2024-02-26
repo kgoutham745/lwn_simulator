@@ -202,6 +202,7 @@ func main() {
 	simulatorController.GetIstance()
 
 	log.Println("LWN Simulator is online...")
+	fmt.Println("Press enter to exit!")
 
 	// Open the JSON file
 	path := "c2.json"
@@ -418,7 +419,7 @@ func main() {
 
 		}
 	}
-	fmt.Println("Press enter to exit!")
+
 	simulatorController.Run()
 	var userInput string
 	_, errr := fmt.Scanln(&userInput)
